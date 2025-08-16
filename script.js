@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function() {
     ctaButtons.forEach(button => {
         button.addEventListener('click', function(e) {
             // Aqui você pode adicionar a lógica para redirecionar para a página de compra
-            // Por exemplo: window.location.href = 'https://link-de-compra.com';
+            // Por exemplo: window.location.href = 'https://pay.hotmart.com/G101177889P';
             
             // Por enquanto, vamos apenas mostrar um alerta
             if (this.textContent.includes('Quero o Ebook')) {

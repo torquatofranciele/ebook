@@ -2919,23 +2919,16 @@ section {
     padding-left: 0 !important; /* Removes large left padding on mobile */
   }
 }
-/* Option 1: General body or container top margin */
-@media screen and (max-width: 767px) {
-  body, .container {
-    margin-top: 10px !important; /* Adjust the value as needed */
-  }
-}
 
-/* Option 2: Target a specific section's padding */
-@media screen and (max-width: 767px) {
-  .hero, .hero-2, .hero-content {
-    padding-top: 0 !important; /* Or a reduced value like 1rem */
+@media (max-width: 767.98px) {
+  .audience-content {
+    display: block !important; /* Forces a single-column layout */
   }
-}
-
-/* Option 3: Adjust margin on the main row or column */
-@media screen and (max-width: 767px) {
-  .row, .row-content, .col-12 {
-    margin-top: 0 !important;
+  .audience-column {
+    width: 100%; /* Makes each column take the full width */
+    margin-bottom: 2rem; /* Adds space between stacked blocks */
+  }
+  .audience-column:last-child {
+    margin-bottom: 0; /* Removes margin from the last block */
   }
 }

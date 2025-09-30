@@ -2922,10 +2922,11 @@ section {
 
 @media (max-width: 767.98px) {
   .audience-content {
-    display: block !important; /* Forces a single-column layout */
+    display: flex !important; /* Forces a flexbox layout */
+    flex-direction: column; /* Stacks children vertically */
   }
   .audience-column {
-    width: 100%; /* Makes each column take the full width */
+    width: 100%; /* Ensures each block takes the full width */
     margin-bottom: 2rem; /* Adds space between stacked blocks */
   }
   .audience-column:last-child {

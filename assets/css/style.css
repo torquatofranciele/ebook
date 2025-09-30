@@ -2868,3 +2868,54 @@ section {
     font-size: 12px;
     font-weight: 600;
 }
+
+/* Somente mobile */
+@media only screen and (max-width: 767px) {
+  .hero .row-content {
+    display: flex;
+    flex-direction: column-reverse; /* inverte ordem */
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero .col-img img {
+    max-width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+    position: relative !important; /* garante que não desloque */
+    left: auto !important;
+    bottom: auto !important;
+  }
+}
+
+/* Center the image and adjust layout on mobile */
+@media (max-width: 767.98px) {
+  .hero .row-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-holder {
+    display: flex;
+    justify-content: center; /* Center image horizontally */
+    order: -1; /* Move image container above the text */
+    margin-bottom: 1rem; /* Add space between image and text */
+  }
+  .hero-holder .img-fluid {
+    max-width: 80%; /* Optional: Control image size on mobile */
+  }
+  .pl-100 {
+    padding-left: 0 !important; /* Remove large left padding on mobile */
+  }
+  .pt-50 {
+    padding-top: 1rem !important; /* Adjust top padding for mobile */
+  }
+}
+/* Optional: Fine-tuning for mobile */
+@media (max-width: 767.98px) {
+  .hero-holder {
+    margin-bottom: 1.5rem; /* Adds space between image and title */
+  }
+  .pl-100 {
+    padding-left: 0 !important; /* Removes large left padding on mobile */
+  }
+}
